@@ -1,6 +1,6 @@
 # vscodeEdit
 
-  等于前端来说vscode是一个十分强大的开发软件,其插件系统以及强大的插件生态圈使得我们的开发变得更加快捷。
+  对于前端来说vscode是一个十分强大的开发软件,其插件系统以及强大的插件生态圈使得我们的开发变得更加快捷。
 
   看下我目前的安装的插件
     <br>![avatar](https://raw.githubusercontent.com/ahauzq/Blog/master/png/ve1.png)
