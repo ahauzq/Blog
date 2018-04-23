@@ -7,7 +7,8 @@
     <br>![avatar](https://raw.githubusercontent.com/ahauzq/Blog/master/png/ve2.png)
 
   用户设置
-    {
+```
+{
     // 窗口失去焦点自动保存
     "files.autoSave": "onFocusChange",
     // 控制字体系列。
@@ -51,3 +52,4 @@
     "vetur.format.defaultFormatter.html": "js-beautify-html",
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
 }
+```
