@@ -13,7 +13,7 @@ class Test {
         let b = await this.getData2(a);
         console.log(b); // 第2秒时输出: getData2返回的结果
     }
-    async getData1(param){
+    getData1(param){
         return new Promise((resolve) => {
             setTimeout(() => {
                 param = {
@@ -23,7 +23,7 @@ class Test {
             }, 1000);
         });
     }
-    async getData2(param){
+    getData2(param){
         return new Promise((resolve, reject) => {
             console.log('测试param:',param);
             setTimeout(() => {
