@@ -8,7 +8,7 @@
 
 用户设置
 
-```
+````javascript
 {
     // 窗口失去焦点自动保存
     "files.autoSave": "onFocusChange",
@@ -72,3 +72,4 @@
     "markdown.styles": []
 }
 ```
+````
