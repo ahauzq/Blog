@@ -2,8 +2,8 @@
 
 ### 针对于一些新人或者对 git 命令不熟悉的人，还是有必要学习一下 git 命令，好的 git 命令使用习惯有助于代码的维护
 
-####先说下规范
-#####Commit Message 规范
+#### 先说下规范
+##### Commit Message 规范
 
 格式
 
@@ -40,9 +40,9 @@
 Tag
 发布新版本后一定要打 tag，格式 0.1.6，并且添加详细的发布说明。
 
-####TODO 如何创建一个 git 项目 gitlab 和 github 的 git 命令其实是一致的，以 gitlab 为例
+#### TODO 如何创建一个 git 项目 gitlab 和 github 的 git 命令其实是一致的，以 gitlab 为例
 
-####拉取项目
+#### 拉取项目
 
 #### Create a new repository
 
@@ -76,109 +76,109 @@ Tag
     git push -u origin --tags
 </code></pre>
 
-####一些实用的操作命令
-####git help
+#### 一些实用的操作命令
+#### git help
 
 <pre><code>
     git help
 </code></pre>
 
-####拉取代码
+#### 拉取代码
 
 <pre><code>
     git clone git@git.souche-inc.com:zhouqing/zqtest.git
 </code></pre>
 
-####切换分支
+#### 切换分支
 
-#####新建一个分支
+##### 新建一个分支
 
 <pre><code>
     git checkout -b feature/customer-detail
 </code></pre>
 
-#####切换一个已有分支
+##### 切换一个已有分支
 
 <pre><code>
     git checkout feature/customer-detail
 </code></pre>
 
-#####查看本地分支
+##### 查看本地分支
 
 <pre><code>
     git branch
 </code></pre>
 
-#####查看远程分支
+##### 查看远程分支
 
 <pre><code>
     git branch -r
 </code></pre>
 
-#####查看本地和远程的所有分支
+##### 查看本地和远程的所有分支
 
 <pre><code>
     git branch -a
 </code></pre>
 
-#####删除本地分支
+##### 删除本地分支
 
 <pre><code>
     git branch -d <分支名>
 </code></pre>
 
-#####删除远程分支
+##### 删除远程分支
 
 <pre><code>
     git push origin --delete <分支名>
 </code></pre>
 
-#####更新远程分支列表
+##### 更新远程分支列表
 
 <pre><code>
     git remote update origin -p
 </code></pre>
 
 
-####git commit 提交
+#### git commit 提交
 
 <pre><code>
     git commit -m'feat:本次新功能提交的备注信息'
 </code></pre>
 
-######增补提交. 会使用与当前提交节点相同的父节点进行一次新的提交,旧的提交将会被取消.
+###### 增补提交. 会使用与当前提交节点相同的父节点进行一次新的提交,旧的提交将会被取消.
 
 <pre><code>
     git commit --amend
 </code></pre>
 
-####代码回滚
+#### 代码回滚
 
-######HEAD 指向当前最近的一次提交等价于 git log 中的 commit_id 的值
+###### HEAD 指向当前最近的一次提交等价于 git log 中的 commit_id 的值
 
 <pre><code>
     git reset HEAD^
 </code></pre>
 
-######回滚提交记录，但是文件不改动，取消了之前 commit 和 add 的操作
+###### 回滚提交记录，但是文件不改动，取消了之前 commit 和 add 的操作
 
 <pre><code>
     git reset --mixed id <==> git reset id
 </code></pre>
 
-######回退到某个版本，只回退了 commit 的信息，不会恢复到 index file 一级。如果还要提交，直接 commit 即可
+###### 回退到某个版本，只回退了 commit 的信息，不会恢复到 index file 一级。如果还要提交，直接 commit 即可
 
 <pre><code>
     git reset --soft id
 </code></pre>
 
-#####彻底回退到某个版本，本地的源码也会变为上一个版本的内容，撤销的 commit 的会丢失；
+##### 彻底回退到某个版本，本地的源码也会变为上一个版本的内容，撤销的 commit 的会丢失；
 
 <pre><code>
     git reset --hard id
 </code></pre>
 
-####A 分支未提交代码 转移到 B 分支
+#### A 分支未提交代码 转移到 B 分支
 
 <pre><code>
     - 在A分支执行git stash缓存改动的代码
@@ -196,7 +196,7 @@ Tag
     代码就轻松从A分支转移到B分支
 </code></pre>
 
-####A 分支已 commit 代码 转移到 B 分支
+#### A 分支已 commit 代码 转移到 B 分支
 
 <pre><code>
     - 回滚代码commit记录
